@@ -13,9 +13,17 @@
   height: 50vh;
   width: 50vh;
   background-color: green;
+  @include respond(Smartphone) {
+    height: 40vh;
+    width: 40vh;
+  }
 }
 .TextSection {
   height: 50vh;
   width: 50vh;
   background-color: blue;
+  @include respond(Smartphone) {
+    height: 40vh;
+    width: 40vh;
+  }
 }
