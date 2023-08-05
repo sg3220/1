@@ -1,0 +1,64 @@
+@import "Mixins";
+.Header {
+  height: calc(10vh - 10px);
+  width: calc(100vw - 20px);
+
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+
+  background-color: orange;
+  @include respond(Tablet-Portrait) {
+    height: calc(40vh + 10px);
+
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: space-between;
+  }
+  &--Logo {
+    height: 8vh;
+
+    font-size: 6vh;
+    font-weight: 500;
+
+    background-color: yellow;
+  }
+  &--NavigationBar {
+    height: 8vh;
+
+    align-items: center;
+
+    font-size: 4vh;
+    font-weight: 300;
+
+    display: flex;
+    flex-direction: row;
+
+    background-color: green;
+    @include respond(Tablet-Portrait) {
+      height: 32vh;
+      flex-direction: column;
+      align-items: flex-start;
+      justify-content: space-evenly;
+    }
+
+    &-Element {
+      padding: 0 2vw;
+      background-color: yellow;
+    }
+  }
+}
+.Home {
+  height: 85vh;
+  width: calc(100vw - 20px);
+
+  background-color: yellow;
+}
+
+.Footer {
+  height: calc(5vh - 10px);
+  width: calc(100vw - 20px);
+
+  background-color: green;
+}
