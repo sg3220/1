@@ -1,0 +1,21 @@
+@import "Mixins";
+.Home {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  @include respond(Tablet-Portrait) {
+    height: 125vh;
+    flex-direction: column;
+  }
+}
+.ImageSection {
+  height: 50vh;
+  width: 50vh;
+  background-color: green;
+}
+.TextSection {
+  height: 50vh;
+  width: 50vh;
+  background-color: blue;
+}
